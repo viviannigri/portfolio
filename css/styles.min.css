@@ -867,11 +867,7 @@ img.rounded { border-radius: 6px }
 }
 
 @media(max-width:550px) {
-	.rotatePhone {
-		transform: scale(.7) rotate(90deg) !important;
-    	margin-top: -60%;
-	}
-    html {
+	html {
         font-size: 5px
     }
     .slide .frame-93 {
@@ -1686,7 +1682,7 @@ img.rounded { border-radius: 6px }
         padding-bottom: 20px
     }
     .wrap-text-100 h1 {
-        font-size: 30px
+        font-size: 30px;
     }
     .wrap-text-100 h3 {
         font-size: 16px;
@@ -1699,10 +1695,20 @@ img.rounded { border-radius: 6px }
     }
     .resources.slides .share.customShare span {
         margin: 0 8px
+    }    
+
+    .slide-3 .resizePhone {
+        transform: scale(.6) rotate(90deg) !important;
+        margin-top: -45%;
+        margin-bottom: -70%;
     }
 }
 
 @media(min-width:767px) {
+	.slide-3 .resizePhone {
+        transform: scale(1) rotate(90deg) !important;
+        margin-bottom: -20%;
+    }
 	.iphone-28 {
         margin-top: -228px;
         margin-bottom: -228px
@@ -1806,10 +1812,7 @@ img.rounded { border-radius: 6px }
     .slides-form select {
         max-width: 300px
     }
-    .slide-3 .image {
-        margin-top: -15%;
-        transform: scale(1) rotate(90deg) !important;
-    }
+    
     .slide-3 .image-2 {
         position: absolute;
         top: 0;
@@ -1852,7 +1855,7 @@ img.rounded { border-radius: 6px }
     }
 }
 
-@media(max-width:1023px) {
+@media(max-width:1024px) {
     .iconApp {
         height: 42px;
         padding-right: 5px;
@@ -2660,21 +2663,23 @@ img.rounded { border-radius: 6px }
     .slide-9 .image-2 {
         display: none
     }
+
+    #galaxy {
+    	margin-top: -120px;    	
+    }
+}
+
+.slide-2 .image, .slide-3 .image {
+    max-width: none;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 -30px 60px rgba(0, 0, 0, 0.03);
+    box-shadow: 0 -30px 60px rgba(0, 0, 0, 0.03);
+    align-items: center;
 }
 
 @media(min-width:1024px) {
-	.slide-2 .image {
-        /*margin:0 0 -115% 40px;*/
-        max-width: none;
-        border-radius: 8px;
-        -webkit-box-shadow: 0 -30px 60px rgba(0, 0, 0, 0.03);
-        box-shadow: 0 -30px 60px rgba(0, 0, 0, 0.03);
-        /*display: -webkit-flex;
-		-webkit-align-items: center;
-		display: flex;*/
-        align-items: center;
-    }
-    .slide-7 .image {
+	
+	.slide-7 .image {
         margin-bottom: -44%;
         margin-left: -9%
     }
@@ -2748,7 +2753,7 @@ img.rounded { border-radius: 6px }
 	.hideForDesktop {
         display: none !important
     }
-    .slide-3.image {
+    .slide-3.resizePhone {
         transform: rotate(90deg) scale(1);
     }
     .showForDesktop {
@@ -3612,7 +3617,7 @@ h1.huge,
     font-size: 46px;
     line-height: 1.218751;
     letter-spacing: -0.04em;
-    margin-bottom: 40px;
+    /*margin-bottom: 40px;*/
     font-weight: 100
 }
 

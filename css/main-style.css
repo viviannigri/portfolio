@@ -71,9 +71,8 @@ nav {
 }
 
 .rotatePhone {
-		transform: scale(.7) rotate(90deg) !important;
-    	margin-top: -60%;
-	}
+	transform: rotate(90deg) !important;    	
+}
 
 .videoCell {
 	position: absolute;
@@ -158,13 +157,13 @@ nav {
     height: 500px;
     max-height: 700px;
     position: relative;
-    /*overflow: hidden;*/
 }
-#c0 { position: absolute; }
-#c1 { position: absolute; }
-#c2 { position: absolute; }
-#c3 { position: absolute; }
-#c4 { position: absolute; }
-#c5 { position: absolute; }
-#c6 { position: absolute; }
-#c7 { position: absolute; }
+
+#c0 { position: absolute; left: 0; right: 0; margin: auto}
+#c1 { position: absolute; left: 0; right: 0; margin: auto}
+#c2 { position: absolute; left: 0; right: 0; margin: auto}
+#c3 { position: absolute; left: 0; right: 0; margin: auto}
+#c4 { position: absolute; left: 0; right: 0; margin: auto}
+#c5 { position: absolute; left: 0; right: 0; margin: auto}
+#c6 { position: absolute; left: 0; right: 0; margin: auto}
+#c7 { position: absolute; left: 0; right: 0; margin: auto}
